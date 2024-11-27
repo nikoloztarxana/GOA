@@ -1,4 +1,4 @@
-name = " nikolozi "
+name = " nikoloz "
 surname = " tarxnishvili "
 hello = " გამარჯობა "
 str1 = " შენ ხარ "
