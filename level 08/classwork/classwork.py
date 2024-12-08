@@ -1,5 +1,4 @@
 input("enter your age")
-age = 13
 print(int(age))
 print(str(age))
 print(float(age))
@@ -10,6 +9,5 @@ print(float(age))
 #str() ფუნქცია გვეხმარება რომ მნიშვნელობა გარდავქმნად სტრინგად
 #float() ფუნქცია გვეხმარება რომ მინშვნელობა გარდავქმნად ათწილადად
 
-input("enter you age")
-age = 13
-print(int(age + 5))
+int(input("enter you age"))
+print("age" + 5)
