@@ -6,7 +6,7 @@ e = not (7 > 3)#false
 f = "hello" == "world"#false
 g = 15 >= 10#true
 h = 8 <= 8#true
-i = 3 > 1 and 2 == 2 and 4 != 5#false
+i = 3 > 1 and 2 == 2 and 4 != 5#true
 j = not (10 < 5 or 2 == 2)#false
 
 
