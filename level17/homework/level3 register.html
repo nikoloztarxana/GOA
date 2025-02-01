@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>რეგისტრაცია</h1>
+    <form action="submit.php" method="post">
+        <label for="fname">სახელი:</label>
+        <input type="text" id="fname" name="fname" placeholder="შეიყვანეთ სახელი" required><br><br>
+
+        <label for="lname">გვარი:</label>
+        <input type="text" id="lname" name="lname" placeholder="შეიყვანეთ გვარი" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="შეიყვანეთ Email" required><br><br>
+
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" placeholder="შეიყვანეთ პაროლი" required><br><br>
+
+        <label for="age">ასაკი:</label>
+        <input type="number" id="age" name="age" min="1" max="100" placeholder="შეიყვანეთ ასაკი" required><br><br>
+
+        
+
+        <label for="country">ქვეყანა:</label>
+        <select id="country" name="country">
+            <option value="georgia">საქართველო</option>
+            <option value="usa">აშშ</option>
+            <option value="uk">დიდი ბრიტანეთი</option>
+        </select><br><br>
+
+        
+
+        <label for="phone">ტელეფონი:</label>
+        <input type="tel" id="phone" name="phone" placeholder="შეიყვანეთ ნომერი" required><br><br>
+
+        
+    </form>
+    <br>
+    <a href="level3 home.html">მთავარ გვერდზე დაბრუნება</a>
+</body>
+</html>
