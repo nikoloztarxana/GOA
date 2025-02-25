@@ -1,4 +1,11 @@
-<!-- შექმენით საიტი სადაც ჩაამატებთ თქვენი 3 საყვარელი ანიმაციის ან ფილმის ვიდეოს (ტრეილერს) და გვერძე მიუწერეთ მოკლედ, რაზეა ფილმი ან ანიმაცია, ასევე დაამატეთ საყვარელიი მუსიკები ვიდეო თეგით და გვერდზე მიუწერეთ მუსიკის სახელი. -->
+<!-- შექმენით პატარა სარეგისტრაციო ფორმა სადაც იქნება 3 შესაყვანი ველი ემაილი, პაროლი, და ქვეყანა
+
+(გამოიყენეთ drop down menu და value ატრიბუტი ქვეყნებისთვის)
+
+ასევე უნდა იყოს submit (დადასტურების) ღილაკი,
+
+გამოიყენეთ name ატრიბუტი ყველა input-ზე და ასევე გაუწერეთ label-ები სილამაზისთვის (დააკავშირეთ id-ით) -->
+
 
 
 <!DOCTYPE html>
@@ -6,48 +13,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ჩემი საყვარელი ფილმები და მუსიკები</title>
+    <title>სარეგისტრაციო ფორმა</title>
 </head>
 <body>
 
-    <h1>ჩემი საყვარელი ფილმები და მუსიკები</h1>
+    <h2>სარეგისტრაციო ფორმა</h2>
 
-    <h2>ფილმები</h2>
+    <form action="submit.php" method="POST">
+        <!-- Email Field -->
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
 
-    <h3>1. Interstellar (2014)</h3>
-    <video width="400" controls>
-        <source src="interstellar-trailer.mp4" type="video/mp4">
-    </video>
-    <p>ფილმი ასტრონავტებზე, რომლებიც სხვა პლანეტაზე სიცოცხლეს ეძებენ.</p>
+        <!-- Password Field -->
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
 
-    <h3>2. Spirited Away (2001)</h3>
-    <video width="400" controls>
-        <source src="spirited-away-trailer.mp4" type="video/mp4">
-    </video>
-    <p>გოგონას საოცარი მოგზაურობა სხვა სამყაროში.</p>
-
-    <h3>3. The Dark Knight (2008)</h3>
-    <video width="400" controls>
-        <source src="dark-knight-trailer.mp4" type="video/mp4">
-    </video>
-    <p>ბეტმენის ბრძოლა ჯოკერთან.</p>
-
-    <h2>მუსიკები</h2>
-
-    <h3>1. Hans Zimmer - Time</h3>
-    <video width="400" controls>
-        <source src="time-hanszimmer.mp4" type="video/mp4">
-    </video>
-
-    <h3>2. Joe Hisaishi - One Summer’s Day</h3>
-    <video width="400" controls>
-        <source src="one-summers-day.mp4" type="video/mp4">
-    </video>
-
-    <h3>3. The Dark Knight Theme</h3>
-    <video width="400" controls>
-        <source src="dark-knight-theme.mp4" type="video/mp4">
-    </video>
-
-</body>
-</html>
+        <!-- Country Dropdown -->
+        <label for="country">ქვეყანა:</label>
+        <select id="country" name="country" required>
+            <option value="">აირჩიეთ ქვეყანა</option>
+            <option value="ge">საქართველო</option>
+            <option value="us">ამერიკა</option>
+            <option value="uk">გაერთიანებული სამეფო</option>
+            <option value="de">გერმანია</option>
+            <option value="fr">საფრანგეთი</option>
+        </select>
+        <br><br>
