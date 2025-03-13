@@ -9,9 +9,9 @@
 
 
 
-status = "Student"  # 'Status' -> 'status' (ცვლადის სახელი უნდა იყოს პატარა ასოებით)
+status = "Student"  
 
-if status.lower() == "student":  # 'Status' -> 'status', ასევე '.lower()' რომ რეგისტრი არ ჰქონდეს მნიშვნელობა
+if status.lower() == "student":  
     print(True)
 else:
-    print(False)  # შეწეული ჩანაწერი ('indentation' პრობლემა)
+    print(False)  
